@@ -1,31 +1,31 @@
-#+TITLE: My Solutions to *How to Design Programs, 2ed*
+#+TITLE: How to Design Programs, 2ed
 #+AUTHOR: Ada
 * 1-7 Fixed-Size Data
 ** Arithmetic
 ** Functions and Programs
-[[file:./1-7 Fixed-Size Data/2-functions and programs.rkt]]
+- [[./1-7 Fixed-Size Data/2-functions and programs.rkt]]
 ** How to Design Programs
-*** [[file:./1-7 Fixed-Size Data/3-how to design programs.rkt]]
-*** 39-41: [[file:./1-7 Fixed-Size Data/3-39-41.rkt][link]]
-*** 43: [[file:./1-7 Fixed-Size Data/3-43.rkt][link]]
-*** 44: [[file:./1-7 Fixed-Size Data/3-44.rkt][link]]
-*** 47: [[file:./1-7 Fixed-Size Data/3-47.rkt][link]]
+- [[./1-7 Fixed-Size Data/3-how to design programs.rkt]]
+- 39-41: [[./1-7 Fixed-Size Data/3-39-41.rkt][link]]
+- 43: [[./1-7 Fixed-Size Data/3-43.rkt][link]]
+- 44: [[./1-7 Fixed-Size Data/3-44.rkt][link]]
+- 47: [[./1-7 Fixed-Size Data/3-47.rkt][link]]
 ** Intervals, Enumerations, Itemizations
-*** 51: [[file:./1-7 Fixed-Size Data/4-51.rkt][link]]
-*** 53-57: [[file:./1-7 Fixed-Size Data/4-53-57.rkt][link]]
-*** 59: [[file:./1-7 Fixed-Size Data/4-59.rkt][link]]
-*** 62: [[file:./1-7 Fixed-Size Data/4-59.rkt][link]]
+- 51: [[./1-7 Fixed-Size Data/4-51.rkt][link]]
+- 53-57: [[./1-7 Fixed-Size Data/4-53-57.rkt][link]]
+- 59: [[./1-7 Fixed-Size Data/4-59.rkt][link]]
+- 62: [[./1-7 Fixed-Size Data/4-59.rkt][link]]
 ** Adding Structure
-*** 74: [[file:./1-7 Fixed-Size Data/5-74.rkt][link]]
-*** 81: [[file:./1-7 Fixed-Size Data/5-81.rkt][link]]
-*** 82: [[file:./1-7 Fixed-Size Data/5-82.rkt][link]]
-*** chameleon: [[file:./1-7 Fixed-Size Data/5-chameleon.rkt][link]]
-*** graphical editor: [[file:./1-7 Fixed-Size Data/5-graphical editor.rkt][link]]
-*** graphical editor 2: [[file:./1-7 Fixed-Size Data/5-graphical editor 2.rkt][link]]
+- 74: [[./1-7 Fixed-Size Data/5-74.rkt][link]]
+- 81: [[./1-7 Fixed-Size Data/5-81.rkt][link]]
+- 82: [[./1-7 Fixed-Size Data/5-82.rkt][link]]
+- chameleon: [[./1-7 Fixed-Size Data/5-chameleon.rkt][link]]
+- graphical editor: [[./1-7 Fixed-Size Data/5-graphical editor.rkt][link]]
+- graphical editor 2: [[./1-7 Fixed-Size Data/5-graphical editor 2.rkt][link]]
 ** Itemizations and Structures
-*** 107: [[file:./1-7 Fixed-Size Data/6-107.rkt][link]]
-*** 107-2: [[file:./1-7 Fixed-Size Data/6-107-2.rkt][link]]
-*** 108: [[file:./1-7 Fixed-Size Data/6-108.rkt][link]]
-*** 109: [[file:./1-7 Fixed-Size Data/6-109.rkt][link]]
-*** space invader game: [[file:./1-7 Fixed-Size Data/6-space invader game.rkt][link]]
-*** space invader game 2: [[file:./1-7 Fixed-Size Data/6-space invader game 2.rkt][link]]
+- 107: [[./1-7 Fixed-Size Data/6-107.rkt][link]]
+- 107-2: [[./1-7 Fixed-Size Data/6-107-2.rkt][link]]
+- 108: [[./1-7 Fixed-Size Data/6-108.rkt][link]]
+- 109: [[./1-7 Fixed-Size Data/6-109.rkt][link]]
+- space invader game: [[./1-7 Fixed-Size Data/6-space invader game.rkt][link]]
+- space invader game 2: [[./1-7 Fixed-Size Data/6-space invader game 2.rkt][link]]
