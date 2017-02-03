@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-02-03 Fri 18:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Solutions to <b>How to Design Programs, 2ed</b></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ada" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">My Solutions to <b>How to Design Programs, 2ed</b></h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org3f43ba0">1. 1-7 Fixed-Size Data</a>
+<ul>
+<li><a href="#orgf95ac1d">1.1. Arithmetic</a></li>
+<li><a href="#org32c4972">1.2. Functions and Programs</a></li>
+<li><a href="#org0dd66d9">1.3. How to Design Programs</a>
+<ul>
+<li><a href="#org001ca43">1.3.1. </a></li>
+<li><a href="#orgea88658">1.3.2. 39-41: link</a></li>
+<li><a href="#orgd8d5762">1.3.3. 43: link</a></li>
+<li><a href="#org0df00b3">1.3.4. 44: link</a></li>
+<li><a href="#org458716c">1.3.5. 47: link</a></li>
+</ul>
+</li>
+<li><a href="#org5228bb0">1.4. Intervals, Enumerations, Itemizations</a>
+<ul>
+<li><a href="#orgbece7ee">1.4.1. 51: link</a></li>
+<li><a href="#orgf2b724e">1.4.2. 53-57: link</a></li>
+<li><a href="#org45a7cd4">1.4.3. 59: link</a></li>
+<li><a href="#orgb64be59">1.4.4. 62: link</a></li>
+</ul>
+</li>
+<li><a href="#org7ee2264">1.5. Adding Structure</a>
+<ul>
+<li><a href="#orgddeffac">1.5.1. 74: link</a></li>
+<li><a href="#orgdee4642">1.5.2. 81: link</a></li>
+<li><a href="#org3f42697">1.5.3. 82: link</a></li>
+<li><a href="#orgf411b42">1.5.4. chameleon: link</a></li>
+<li><a href="#org0489dd1">1.5.5. graphical editor: link</a></li>
+<li><a href="#org168ad42">1.5.6. graphical editor 2: link</a></li>
+</ul>
+</li>
+<li><a href="#orgaf82b44">1.6. Itemizations and Structures</a>
+<ul>
+<li><a href="#org4fe1241">1.6.1. 107: link</a></li>
+<li><a href="#orgd23928e">1.6.2. 107-2: link</a></li>
+<li><a href="#orgec02e92">1.6.3. 108: link</a></li>
+<li><a href="#orga370afb">1.6.4. 109: link</a></li>
+<li><a href="#org9cb0015">1.6.5. space invader game: link</a></li>
+<li><a href="#orgf3b81d8">1.6.6. space invader game 2: link</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3f43ba0" class="outline-2">
+<h2 id="org3f43ba0"><span class="section-number-2">1</span> 1-7 Fixed-Size Data</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-orgf95ac1d" class="outline-3">
+<h3 id="orgf95ac1d"><span class="section-number-3">1.1</span> Arithmetic</h3>
+</div>
+<div id="outline-container-org32c4972" class="outline-3">
+<h3 id="org32c4972"><span class="section-number-3">1.2</span> Functions and Programs</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<a href="./1-7 Fixed-Size Data/2-functions and programs.rkt">./1-7 Fixed-Size Data/2-functions and programs.rkt</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org0dd66d9" class="outline-3">
+<h3 id="org0dd66d9"><span class="section-number-3">1.3</span> How to Design Programs</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-org001ca43" class="outline-4">
+<h4 id="org001ca43"><span class="section-number-4">1.3.1</span> <a href="./1-7 Fixed-Size Data/3-how to design programs.rkt">./1-7 Fixed-Size Data/3-how to design programs.rkt</a></h4>
+</div>
+<div id="outline-container-orgea88658" class="outline-4">
+<h4 id="orgea88658"><span class="section-number-4">1.3.2</span> 39-41: <a href="./1-7 Fixed-Size Data/3-39-41.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgd8d5762" class="outline-4">
+<h4 id="orgd8d5762"><span class="section-number-4">1.3.3</span> 43: <a href="./1-7 Fixed-Size Data/3-43.rkt">link</a></h4>
+</div>
+<div id="outline-container-org0df00b3" class="outline-4">
+<h4 id="org0df00b3"><span class="section-number-4">1.3.4</span> 44: <a href="./1-7 Fixed-Size Data/3-44.rkt">link</a></h4>
+</div>
+<div id="outline-container-org458716c" class="outline-4">
+<h4 id="org458716c"><span class="section-number-4">1.3.5</span> 47: <a href="./1-7 Fixed-Size Data/3-47.rkt">link</a></h4>
+</div>
+</div>
+<div id="outline-container-org5228bb0" class="outline-3">
+<h3 id="org5228bb0"><span class="section-number-3">1.4</span> Intervals, Enumerations, Itemizations</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-orgbece7ee" class="outline-4">
+<h4 id="orgbece7ee"><span class="section-number-4">1.4.1</span> 51: <a href="./1-7 Fixed-Size Data/4-51.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgf2b724e" class="outline-4">
+<h4 id="orgf2b724e"><span class="section-number-4">1.4.2</span> 53-57: <a href="./1-7 Fixed-Size Data/4-53-57.rkt">link</a></h4>
+</div>
+<div id="outline-container-org45a7cd4" class="outline-4">
+<h4 id="org45a7cd4"><span class="section-number-4">1.4.3</span> 59: <a href="./1-7 Fixed-Size Data/4-59.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgb64be59" class="outline-4">
+<h4 id="orgb64be59"><span class="section-number-4">1.4.4</span> 62: <a href="./1-7 Fixed-Size Data/4-59.rkt">link</a></h4>
+</div>
+</div>
+<div id="outline-container-org7ee2264" class="outline-3">
+<h3 id="org7ee2264"><span class="section-number-3">1.5</span> Adding Structure</h3>
+<div class="outline-text-3" id="text-1-5">
+</div><div id="outline-container-orgddeffac" class="outline-4">
+<h4 id="orgddeffac"><span class="section-number-4">1.5.1</span> 74: <a href="./1-7 Fixed-Size Data/5-74.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgdee4642" class="outline-4">
+<h4 id="orgdee4642"><span class="section-number-4">1.5.2</span> 81: <a href="./1-7 Fixed-Size Data/5-81.rkt">link</a></h4>
+</div>
+<div id="outline-container-org3f42697" class="outline-4">
+<h4 id="org3f42697"><span class="section-number-4">1.5.3</span> 82: <a href="./1-7 Fixed-Size Data/5-82.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgf411b42" class="outline-4">
+<h4 id="orgf411b42"><span class="section-number-4">1.5.4</span> chameleon: <a href="./1-7 Fixed-Size Data/5-chameleon.rkt">link</a></h4>
+</div>
+<div id="outline-container-org0489dd1" class="outline-4">
+<h4 id="org0489dd1"><span class="section-number-4">1.5.5</span> graphical editor: <a href="./1-7 Fixed-Size Data/5-graphical editor.rkt">link</a></h4>
+</div>
+<div id="outline-container-org168ad42" class="outline-4">
+<h4 id="org168ad42"><span class="section-number-4">1.5.6</span> graphical editor 2: <a href="./1-7 Fixed-Size Data/5-graphical editor 2.rkt">link</a></h4>
+</div>
+</div>
+<div id="outline-container-orgaf82b44" class="outline-3">
+<h3 id="orgaf82b44"><span class="section-number-3">1.6</span> Itemizations and Structures</h3>
+<div class="outline-text-3" id="text-1-6">
+</div><div id="outline-container-org4fe1241" class="outline-4">
+<h4 id="org4fe1241"><span class="section-number-4">1.6.1</span> 107: <a href="./1-7 Fixed-Size Data/6-107.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgd23928e" class="outline-4">
+<h4 id="orgd23928e"><span class="section-number-4">1.6.2</span> 107-2: <a href="./1-7 Fixed-Size Data/6-107-2.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgec02e92" class="outline-4">
+<h4 id="orgec02e92"><span class="section-number-4">1.6.3</span> 108: <a href="./1-7 Fixed-Size Data/6-108.rkt">link</a></h4>
+</div>
+<div id="outline-container-orga370afb" class="outline-4">
+<h4 id="orga370afb"><span class="section-number-4">1.6.4</span> 109: <a href="./1-7 Fixed-Size Data/6-109.rkt">link</a></h4>
+</div>
+<div id="outline-container-org9cb0015" class="outline-4">
+<h4 id="org9cb0015"><span class="section-number-4">1.6.5</span> space invader game: <a href="./1-7 Fixed-Size Data/6-space invader game.rkt">link</a></h4>
+</div>
+<div id="outline-container-orgf3b81d8" class="outline-4">
+<h4 id="orgf3b81d8"><span class="section-number-4">1.6.6</span> space invader game 2: <a href="./1-7 Fixed-Size Data/6-space invader game 2.rkt">link</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Ada</p>
+<p class="date">Created: 2017-02-03 Fri 18:24</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
