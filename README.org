@@ -56,3 +56,12 @@
   - 175: [[./8-13 Arbitrarily Large Data/10-175.rkt][link]]
   - 176: [[./8-13 Arbitrarily Large Data/10-176.rkt][link]]
   - 179: [[./8-13 Arbitrarily Large Data/10-179.rkt][link]]
+- 11. Design by Composition
+  - 181-184: [[./8-13 Arbitrarily Large Data/11-181-184.rkt][link]]
+  - 186: [[./8-13 Arbitrarily Large Data/11-186.rkt][link]]
+  - 187: [[./8-13 Arbitrarily Large Data/11-187.rkt][link]]
+  - 188: [[./8-13 Arbitrarily Large Data/11-188.rkt][link]]
+  - 189: [[./8-13 Arbitrarily Large Data/11-189.rkt][link]]
+  - 190: [[./8-13 Arbitrarily Large Data/11-190.rkt][link]]
+  - 193: [[./8-13 Arbitrarily Large Data/11-193.rkt][link]]
+  - 194: [[./8-13 Arbitrarily Large Data/11-194.rkt][link]]
