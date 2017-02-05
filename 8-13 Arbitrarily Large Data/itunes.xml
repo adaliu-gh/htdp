@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Playlists</key>
+    <array>
+        <dict>
+            <key>Name</key><string>Library</string>
+            <key>Master</key><true/>
+            <key>Playlist ID</key><integer>4053</integer> <!--Ex:4053 I have.-->
+            <key>Playlist Items</key>
+            <array>
+                <dict>
+                  <key>Track ID</key><integer>35</integer>
+                  <key>Name</key><string>Landslide</string>
+                  <key>Artist</key><string>Fleetwood Mac</string>
+                  <key>Album</key><string>The Dance</string>
+                  <key>Genre</key><string>Rock</string>
+                  <key>Kind</key><string>Protected AAC audio file</string>
+                  <key>Size</key><integer>4285488</integer>
+                  <key>Total Time</key><integer>268283</integer>
+                  <key>Track Number</key><integer>9</integer>
+                  <key>Track Count</key><integer>17</integer>
+                  <key>Year</key><integer>1997</integer>
+                  <key>Date Added</key><date>2004-06-16T18:08:31Z</date>
+                  <key>Play Count</key><integer>10</integer>
+                  <key>Play Date</key><integer>-1119376103</integer>
+                  <key>Play Date UTC</key><date>2004-08-17T16:39:53Z</date>
+                </dict>
+                <dict>
+                  <key>Track ID</key><integer>839</integer>
+                  <key>Name</key><string>Sweet Georgia Brown</string>
+                  <key>Artist</key><string>Count Basie & His Orchestra</string>
+                  <key>Composer</key><string>Bernie/Pinkard/Casey</string>
+                  <key>Album</key><string>Prime Time</string>
+                  <key>Genre</key><string>Jazz</string>
+                  <key>Kind</key><string>Protected AAC audio file</string>
+                  <key>Size</key><integer>3771502</integer>
+                  <key>Total Time</key><integer>219173</integer>
+                  <key>Disc Number</key><integer>1</integer>
+                  <key>Disc Count</key><integer>1</integer>
+                  <key>Track Number</key><integer>3</integer>
+                  <key>Track Count</key><integer>8</integer>
+                  <key>Year</key><integer>1977</integer>
+                  <key>Date Modified</key><date>2004-06-16T18:10:55Z</date>
+                  <key>Date Added</key><date>2004-06-16T18:08:31Z</date>
+                  <key>Bit Rate</key><integer>128</integer>
+                  <key>Sample Rate</key><integer>44100</integer>
+                  <key>Play Count</key><integer>3</integer>
+                  <key>Play Date</key><integer>-1119376103</integer>
+                  <key>Play Date UTC</key><date>2004-08-17T16:39:53Z</date>
+                  <key>Rating</key><integer>100</integer>
+                </dict>
+            </array>
+</plist>
