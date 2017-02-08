@@ -7,6 +7,8 @@
 (require 2htdp/universe)
 
 ;; constants
+
+(define SPEED 0.2) ; of the dropping of blocks
 (define WIDTH 10) ; # of blocks, horizontally
 (define HEIGHT (* WIDTH 3/2))
 (define SIZE 10) ; blocks are squares
@@ -17,6 +19,7 @@
    (square SIZE "outline" "black")))
 (define MT (empty-scene SCENE-SIZE
                         (* SIZE HEIGHT)))
+
 
 ;; data definitions
 (define-struct tetris [block landscape])
@@ -71,8 +74,9 @@
 (define (tetris-main any)
   (big-bang (make-tetris (block-generate WIDTH)
                          landscape0)
+            [stop-when touch-top? last-image]
             [on-key tetris-control]
-            [on-tick tetris-tock 0.3]
+            [on-tick tetris-tock SPEED]
             [to-draw tetris-render]))
 
 ; Tetris -> Tetris
@@ -114,26 +118,65 @@
 
 ; Tetris KeyEvent -> Tetris
 (define (tetris-control t k)
+  (if (touch-wall? t k)
+      t
+      (make-tetris (block-slide (tetris-block t) k)
+                                (tetris-landscape t))))
+
+; Tetris KeyEvent -> Tetris
+(define (touch-wall? t k)
+  (or (member? (block-slide (tetris-block t) k)
+               (tetris-landscape t))
+      (member? (block-x (tetris-block t))
+               (list 0 (- WIDTH 1)))))
+
+; Block String -> Block
+(define (block-slide b d)
   (cond
-    [(key=? k "left")
-     (make-tetris (move-left (tetris-block t))
-                  (tetris-landscape t))]
-    [(key=? k "right")
-     (make-tetris (move-right (tetris-block t))
-                  (tetris-landscape t))]
-    [else t]))
+    [(string=? d "left")
+     (make-block (- (block-x b) 1)
+                 (block-y b))]
+    [(string=? d "right")
+     (make-block (+ (block-x b) 1)
+                 (block-y b))]
+    [else b]))
 
-; Block -> Block
-(define (move-left b)
-  (if (< (- (block-x b) 1) 0)
-      b
-      (make-block (- (block-x b) 1)
-                  (block-y b))))
+; =============================
+; 223
+; =============================
 
-; Block -> Block
-(define (move-right b)
-  (if (> (+ (block-x b) 1)
-         (- WIDTH 1))
-      b
-      (make-block (+ (block-x b) 1)
-                  (block-y b))))
+; Tetris -> Boolean
+(define (touch-top? t)
+  (= 0 (block-y (highest (tetris-landscape t)))))
+
+; Landscape -> Block
+(define (highest l)
+  (cond
+    [(empty? l) (make-block 0 HEIGHT)]
+    [(empty? (rest l)) (first l)]
+    [else (if (< (block-y (first l))
+                 (block-y (first (rest l))))
+              (highest (cons (first l)
+                             (rest (rest l))))
+              (highest (rest l)))]))
+
+
+;; Polishment
+
+
+; =================
+; Score
+; =================
+
+; Tetris -> Image
+(define (last-image t)
+  (place-image (text (number->string (get-score t))
+                      (* SIZE 2) "blue")
+               (/ (image-width MT) 2)
+               (/ (image-height MT) 2)
+               (tetris-render t)))
+
+; Tetris -> Number
+(define (get-score t)
+  (length (tetris-landscape t)))
+
