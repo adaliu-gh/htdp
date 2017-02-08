@@ -71,7 +71,8 @@
 (define (tetris-main any)
   (big-bang (make-tetris (block-generate WIDTH)
                          landscape0)
-            [on-tick tetris-tock 0.5]
+            [on-key tetris-control]
+            [on-tick tetris-tock 0.3]
             [to-draw tetris-render]))
 
 ; Tetris -> Tetris
@@ -106,3 +107,33 @@
 ; Number -> Block
 (define (block-generate n)
   (make-block (random n) -1))
+
+; ======================
+; 222
+; ======================
+
+; Tetris KeyEvent -> Tetris
+(define (tetris-control t k)
+  (cond
+    [(key=? k "left")
+     (make-tetris (move-left (tetris-block t))
+                  (tetris-landscape t))]
+    [(key=? k "right")
+     (make-tetris (move-right (tetris-block t))
+                  (tetris-landscape t))]
+    [else t]))
+
+; Block -> Block
+(define (move-left b)
+  (if (< (- (block-x b) 1) 0)
+      b
+      (make-block (- (block-x b) 1)
+                  (block-y b))))
+
+; Block -> Block
+(define (move-right b)
+  (if (> (+ (block-x b) 1)
+         (- WIDTH 1))
+      b
+      (make-block (+ (block-x b) 1)
+                  (block-y b))))
