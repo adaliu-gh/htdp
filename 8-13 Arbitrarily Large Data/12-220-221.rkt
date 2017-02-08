@@ -37,12 +37,11 @@
 ; (make-tetris b0 (list b1 b2 ...)) means b0 is the
 ; dropping block, while b1, b2, and ... are resting
 
+; ===================
+; 220
+; ===================
+
 (define landscape0 '())
-(define block-dropping (make-block 2 2))
-(define tetris0-drop (make-tetris block-dropping landscape0))
-(define block-landed (make-block 0 (- HEIGHT 1)))
-(define block-on-block (make-block 0 (- HEIGHT 2)))
-(define landscape1 (list block-landed block-on-block block-dropping))
 
 ; Tetris -> Image
 (define (tetris-render tetris)
@@ -63,3 +62,47 @@
                (+ (* (block-x block) SIZE) (/ SIZE 2))
                (+ (* (block-y block) SIZE) (/ SIZE 2))
                img))
+
+; ==================
+; 221
+; ==================
+
+; Any -> Tetris
+(define (tetris-main any)
+  (big-bang (make-tetris (block-generate WIDTH)
+                         landscape0)
+            [on-tick tetris-tock 0.5]
+            [to-draw tetris-render]))
+
+; Tetris -> Tetris
+(define (tetris-tock t)
+  (if (land? t)
+      (tetris-update t)
+      (tetris-dropping t)))
+
+; Tetris -> Tetris
+(define (tetris-update t)
+  (make-tetris (block-generate WIDTH)
+               (cons (tetris-block t)
+                     (tetris-landscape t))))
+
+; Tetris -> Tetris
+(define (tetris-dropping t)
+  (make-tetris (block-dropping (tetris-block t))
+               (tetris-landscape t)))
+
+; Tetris -> Boolean
+(define (land? t)
+  (or (member? (block-dropping (tetris-block t))
+               (tetris-landscape t))
+      (= (block-y (tetris-block t))
+         (- HEIGHT 1))))
+
+; Block -> Block
+(define (block-dropping b)
+  (make-block (block-x b)
+              (+ (block-y b) 1)))
+
+; Number -> Block
+(define (block-generate n)
+  (make-block (random n) -1))
