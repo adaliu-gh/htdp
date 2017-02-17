@@ -76,4 +76,5 @@
   - 226, 228: [[./8-13 Arbitrarily Large Data/12-226.228.rkt][link]]
 * 14-18 Abstraction
 - 14. Similarities Everywhere
-  - 235, 236: [[./14-18 Abstraction/14-235-236.rkt][link]]
+  - 235, 236: [[./14-18 Abstraction/14-235-236.ss][link]]
+  - 238: [[./14-18 Abstraction/14-238.ss][link]]
