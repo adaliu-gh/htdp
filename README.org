@@ -79,3 +79,5 @@
   - 235, 236: [[./14-18 Abstraction/14-235-236.ss][link]]
   - 238: [[./14-18 Abstraction/14-238.ss][link]]
   - 245: [[./14-18 Abstraction/14-245.ss][link]]
+- 15. Designing Abstractions
+  - 250, 251, 252: [[./14-18 Abstraction/15-250-252.ss][link]]
