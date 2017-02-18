@@ -81,3 +81,6 @@
   - 245: [[./14-18 Abstraction/14-245.ss][link]]
 - 15. Designing Abstractions
   - 250, 251, 252: [[./14-18 Abstraction/15-250-252.ss][link]]
+  - 254, 255: deleted accidentally 
+- 16. Using Abstractions
+  - 257, 258: [[./14-18 Abstraction/16-257-258.ss][link]]
