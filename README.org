@@ -89,3 +89,5 @@
   - 272, 273, 274: [[./14-18 Abstraction/16-272-274.ss][link]]
 - 17. Nameless Functions
   - 285, 286, 287, 288, 289, 290, 291: [[./14-18 Abstraction/17-285-291.ss][link]]
+  - 292, 293, 294, 295: [[./14-18 Abstraction/17-292-295.ss][link]]
+  - 299 :  [[./14-18 Abstraction/17-299.ss][link]]
