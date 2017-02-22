@@ -76,24 +76,24 @@
   - 226, 228: [[./8-13 Arbitrarily Large Data/12-226.228.rkt][link]]
 * 14-18 Abstraction
 - 14. Similarities Everywhere
-  - 235, 236: [[./14-18 Abstraction/14-235-236.ss][link]]
-  - 238: [[./14-18 Abstraction/14-238.ss][link]]
-  - 245: [[./14-18 Abstraction/14-245.ss][link]]
+  - 235, 236: [[./14-18 Abstraction/14-235-236.rkt][link]]
+  - 238: [[./14-18 Abstraction/14-238.rkt][link]]
+  - 245: [[./14-18 Abstraction/14-245.rkt][link]]
 - 15. Designing Abstractions
-  - 250, 251, 252: [[./14-18 Abstraction/15-250-252.ss][link]]
+  - 250, 251, 252: [[./14-18 Abstraction/15-250-252.rkt][link]]
   - 254, 255: deleted accidentally 
 - 16. Using Abstractions
-  - 257, 258: [[./14-18 Abstraction/16-257-258.ss][link]]
-  - 267, 268, 269: [[./14-18 Abstraction/16-267-269.ss][link]]
-  - 270, 271: [[./14-18 Abstraction/16-270-271.ss][link]]
-  - 272, 273, 274: [[./14-18 Abstraction/16-272-274.ss][link]]
+  - 257, 258: [[./14-18 Abstraction/16-257-258.rkt][link]]
+  - 267, 268, 269: [[./14-18 Abstraction/16-267-269.rkt][link]]
+  - 270, 271: [[./14-18 Abstraction/16-270-271.rkt][link]]
+  - 272, 273, 274: [[./14-18 Abstraction/16-272-274.rkt][link]]
 - 17. Nameless Functions
-  - 285, 286, 287, 288, 289, 290, 291: [[./14-18 Abstraction/17-285-291.ss][link]]
-  - 292, 293, 294, 295: [[./14-18 Abstraction/17-292-295.ss][link]]
-  - 299 :  [[./14-18 Abstraction/17-299.ss][link]]
+  - 285, 286, 287, 288, 289, 290, 291: [[./14-18 Abstraction/17-285-291.rkt][link]]
+  - 292, 293, 294, 295: [[./14-18 Abstraction/17-292-295.rkt][link]]
+  - 299 :  [[./14-18 Abstraction/17-299.rkt][link]]
 - Intermezzo
-  - 305, 306, 307:  [[./14-18 Abstraction/for-loop.ss][link]]
-  - 308, 309: [[./14-18 Abstraction/pattern.ss][link]]
+  - 305, 306, 307:  [[./14-18 Abstraction/for-loop.rkt][link]]
+  - 308, 309: [[./14-18 Abstraction/pattern.rkt][link]]
 * 19-24 Intertwined Data
 - 19. The Poetry of S-expressions
-  - 310, 311, 312, 313: [[./19-24 Intertwined Data/310-313.ss][link]]
+  - 310, 311, 312, 313, 314, 315: [[./19-24 Intertwined Data/310-315.rkt][link]]

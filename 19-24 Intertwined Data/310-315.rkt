@@ -20,6 +20,13 @@
 ;; Youngest Generation:
 (define Gustav (make-child Fred Eva "Gustav" 1988 "brown"))
 
+;; a FF (short for family forest) is one of:
+;; - '()
+;; - (cons FT FF)
+(define ff1 (list Carl Bettina))
+(define ff2 (list Fred Eva))
+(define ff3 (list Fred Eva Carl))
+
 ;; FT -> Boolean
 ;; does a-ftree contain a child
 ;; structure with "blue" in the eyes field
@@ -49,15 +56,17 @@
 ;;311
 
 ;; FT -> Number
+;; sums the ages of all child structures in the ftree
+(define (sum-ages ftree present)
+  (match ftree
+    [(no-parent) 0]
+    [(child father mother name date eyes)
+     (+ (- present date) (sum-ages father present) (sum-ages mother present))]))
+
+;; FT -> Number
 ;; computes the average age of all child structures in the ftree
 (define (average-age ftree)
-  (local (;; FT -> Number
-          (define (sum-ages ftree)
-            (match ftree
-              [(no-parent) 0]
-              [(child father mother name date eyes)
-               (+ (- 2017 date) (sum-ages father) (sum-ages mother))])))
-    (/ (sum-ages ftree) (count-persons ftree))))
+  (/ (sum-ages ftree) (count-persons ftree)))
 
 ;;==================================
 ;;312
@@ -84,3 +93,22 @@
     [(no-parent) #false]
     [(child father mother name date eyes)
      (or (blue-eyed-child? father) (blue-eyed-child? mother))]))
+
+;;================
+;;314
+
+;; FF -> Boolean
+;; does the forest contain any child with "blue" eyes?
+(check-expect (blue-eyed-child-in-forest? ff1) #false)
+(check-expect (blue-eyed-child-in-forest? ff2) #true)
+(check-expect (blue-eyed-child-in-forest? ff3) #true)
+(define (blue-eyed-child-in-forest? forest)
+  (ormap blue-eyed-child? forest))
+
+;;===========================
+;;315
+
+;; FF -> Number
+(define (average-age-in-forest forest present)
+  (/ (foldl (lambda (x y) (+ (sum-ages x present) y)) 0 forest)
+     (foldl (lambda (x y) (+ (count-persons x) y)) 0 forest)))
