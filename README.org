@@ -97,3 +97,4 @@
 * 19-24 Intertwined Data
 - 19. The Poetry of S-expressions
   - 310, 311, 312, 313, 314, 315: [[./19-24 Intertwined Data/310-315.rkt][link]]
+  - 316, 317, 318, 319, 320, 321: [[./19-24 Intertwined Data/316-321.rkt][link]]
