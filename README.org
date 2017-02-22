@@ -93,4 +93,7 @@
   - 299 :  [[./14-18 Abstraction/17-299.ss][link]]
 - Intermezzo
   - 305, 306, 307:  [[./14-18 Abstraction/for-loop.ss][link]]
-  - 308, 309:  [[./14-18 Abstraction/pattern.ss][link]]
+  - 308, 309: [[./14-18 Abstraction/pattern.ss][link]]
+* 19-24 Intertwined Data
+- 19. The Poetry of S-expressions
+  - 310, 311, 312, 313: [[./19-24 Intertwined Data/310-313.ss][link]]
