@@ -91,3 +91,6 @@
   - 285, 286, 287, 288, 289, 290, 291: [[./14-18 Abstraction/17-285-291.ss][link]]
   - 292, 293, 294, 295: [[./14-18 Abstraction/17-292-295.ss][link]]
   - 299 :  [[./14-18 Abstraction/17-299.ss][link]]
+- Intermezzo
+  - 305, 306, 307:  [[./14-18 Abstraction/for-loop.ss][link]]
+  - 308, 309:  [[./14-18 Abstraction/pattern.ss][link]]
