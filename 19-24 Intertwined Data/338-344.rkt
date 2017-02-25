@@ -49,13 +49,14 @@
 ;;============================
 ;;342
 
+;; Dir String -> Boolean
+;; determines if the file is directly in the given d
+(define (in-files? d f)
+  (ormap (lambda (x) (string=? f (file-name x))) (dir-files d)))
+
 ;; Dir String -> [Maybe [Path]]
 (define (find d f)
-  (local (;; [List-of File] -> Boolean
-          ;; determines if the given f is in the direct d
-          (define (in-list? l)
-            (ormap (lambda (x) (string=? f (file-name x))) l))
-
+  (local (
           ;; [List-of Dir] -> Dir
           ;; gets the subdirectory where is the f is
           (define (get-sub l)
@@ -63,6 +64,46 @@
              [(empty? (rest l)) (rest l) ]
              [else (if (find? (first l) f) (first l) (get-sub (rest l)))])))
     (cond
-     [(in-list? (dir-files d)) (list (dir-name d) f)]
+     [(in-files? d f) (list (dir-name d) f)]
      [(find? d f) (cons (dir-name d) (find (get-sub (dir-dirs d)) f))]
      [else #false])))
+
+;;============================
+;;342 challenge
+
+;; Dir String -> [List-of Path]
+(define (find-all d f)
+  (local (
+          ;; Dir -> [List-of Path]
+          (define (all-valid-paths d)
+            (append (if (in-files? d f) (list (list f)) '() )
+                    (foldl (lambda (x y)
+                             (append y (find-all x f)))
+                           '() (dir-dirs d))))          )
+
+    (map (lambda (x) (cons (dir-name d) x)) ( all-valid-paths d))))
+;;========================
+;;343
+
+;; Dir -> [List-of Path]
+(define (ls-R d)
+  (local (;; Dir -> [List-of Path]
+          (define (all-sub-paths d)
+            (append (map (lambda (f) (list (file-name f))) (dir-files d))
+                    (foldl (lambda (x y)
+                             (append y (ls-R x)))
+                           '() (dir-dirs d)))))
+    (map (lambda (x) (cons (dir-name d) x)) (all-sub-paths d))))
+
+;; [List-of Item] -> Item
+(define (last l)
+  (cond
+   [(empty? (rest l)) (first l)]
+   [else (last (rest l))]))
+
+;;=====================
+;;344
+
+;; Dir String -> [List-of Path]
+(define (find-all.v2 d f)
+  (filter (lambda (p) (equal? f (last p))) (ls-R d)))
