@@ -79,7 +79,7 @@
             (append (if (in-files? d f) (list (list f)) '() )
                     (foldl (lambda (x y)
                              (append y (find-all x f)))
-                           '() (dir-dirs d))))          )
+                           '() (dir-dirs d)))))
 
     (map (lambda (x) (cons (dir-name d) x)) ( all-valid-paths d))))
 ;;========================
