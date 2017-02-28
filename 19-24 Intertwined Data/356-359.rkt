@@ -6,6 +6,8 @@
      (make-add-expr (subst left x v) (subst right x v))]
     [(mul-expr left right)
      (make-mul-expr (subst left x v) (subst right x v))]
+    [(fun-expr  f argu)
+     (make-fun-expr  f (subst argu x v))]
     [(? (lambda (i) (equal? i x))) v]
     [else ex]))
 
@@ -67,3 +69,22 @@
    [else (if (equal? f (fun-def-name (first da)))
              (first da)
              (lookup-def (rest da) f))]))
+
+;;=============================
+;;359
+
+;; BSL-fun-expr BSL-fun-def* -> Number
+(check-expect (eval-function* (make-fun-expr 'f 4) da-fgh) 7)
+(check-expect (eval-function* (make-fun-expr 'g 1) da-fgh) 5)
+(check-expect (eval-function* (make-fun-expr 'h 1) da-fgh) 9)
+(define (eval-function* ex da)
+  (match ex
+    [(? number?) ex]
+    [(add-expr left right)
+     (+ (eval-function* left da) (eval-function* right da))]
+    [(mul-expr left right)
+     (* (eval-function* left da) (eval-function* right da))]
+    [(fun-expr s exp)
+     (local ((define f (lookup-def da s)))
+       (eval-function* (subst (fun-def-body f) (fun-def-para f)
+                              (eval-function* exp da)) da))]))
