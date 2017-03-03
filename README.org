@@ -108,3 +108,4 @@
   - 360, 361, 362: [[./19-24 Intertwined Data/360-362.rkt][link]]
 - 22. The Commerce of XML
   - 363, 364, 365, 366, 369: [[./19-24 Intertwined Data/363-369.rkt][link]]
+  - 370, 371, 372, 376, 377: [[./19-24 Intertwined Data/370-377.rkt][link]]
