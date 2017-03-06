@@ -110,3 +110,4 @@
   - 363, 364, 365, 366, 369: [[./19-24 Intertwined Data/363-369.rkt][link]]
   - 370, 371, 372, 376, 377: [[./19-24 Intertwined Data/370-377.rkt][link]]
   - 378, 379, 380, 381, 382, 383: [[./19-24 Intertwined Data/378-383.rkt][link]]
+  - 384, 386: [[./19-24 Intertwined Data/384-386.rkt][link]]
