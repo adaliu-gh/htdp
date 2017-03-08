@@ -113,3 +113,4 @@
   - 384, 386: [[./19-24 Intertwined Data/384-386.rkt][link]]
 - 23. Simultaneous Processing
   - 387, 388, 389: [[./19-24 Intertwined Data/387-389.rkt][link]]
+  - 393, 394, 395: [[./19-24 Intertwined Data/393-395.rkt][link]]
