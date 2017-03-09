@@ -116,3 +116,4 @@
   - 393, 394, 395: [[./19-24 Intertwined Data/393-395.rkt][link]]
   - 396: [[./19-24 Intertwined Data/396.rkt][link]]
   - 397, 398, 399, 400, 401: [[./19-24 Intertwined Data/397-401.rkt][link]]
+  - 403, 404, 405, 406, 407, 408, 409: [[./19-24 Intertwined Data/403-409.rkt][link]]
