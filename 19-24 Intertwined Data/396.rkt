@@ -35,6 +35,7 @@
 ;; HM-Word HM-Word KeyEvent -> HM-Word
 ;; if ke in the-word, updates the current-status or remains unchanged
 (check-expect (compare-word '("a" "b") '("_" "_") "a") '("a" "_"))
+(check-expect (compare-word '("a" "b" "a") '("_" "_" "_") "a") '("a" "_" "a"))
 (define (compare-word the-word current-status ke)
   (local (;; HM-Word HM-Word -> HM-Word
           (define (update-status the-word the-status)
