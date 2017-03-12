@@ -119,3 +119,6 @@
   - 403, 404, 405, 406, 407, 408, 409: [[./19-24 Intertwined Data/403-409.rkt][link]]
   - 410, 411: [[./19-24 Intertwined Data/410-411.rkt][link]]
   - 412: [[./19-24 Intertwined Data/412.rkt][link]]
+* 25-29 Generative Recursion
+- 25. Non-standard Recursion
+  - 422, 423: [[./25-29 Generative Recursion/422-423.rkt][link]]
