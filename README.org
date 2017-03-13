@@ -123,3 +123,5 @@
 - 25. Non-standard Recursion
   - 422, 423: [[./25-29 Generative Recursion/422-423.rkt][link]]
   - 426, 430: [[./25-29 Generative Recursion/426-430.rkt][link]]
+- 26. Designing Algorithms
+  - 432, 433, 434, 436, 437, 442 : [[./25-29 Generative Recursion/432-442.rkt][link]]
