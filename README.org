@@ -125,3 +125,5 @@
   - 426, 430: [[./25-29 Generative Recursion/426-430.rkt][link]]
 - 26. Designing Algorithms
   - 432, 433, 434, 436, 437, 442 : [[./25-29 Generative Recursion/432-442.rkt][link]]
+- 27. Variations on the Theme
+  - 445, 446-449, 450, 451: [[./25-29 Generative Recursion/445-451.rkt][link]]
