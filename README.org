@@ -128,3 +128,5 @@
 - 27. Variations on the Theme
   - 445, 446-449, 450, 451: [[./25-29 Generative Recursion/445-451.rkt][link]]
   - 453, 454: [[./25-29 Generative Recursion/453-454.rkt][link]]
+- 29. Algorithms that Backtrack
+  - 471, 472: [[./25-29 Generative Recursion/471-472.rkt][link]]
