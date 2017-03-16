@@ -102,3 +102,48 @@
      [(empty? l) '()]
      [else (append (first-pairs (first l) (rest l))
                    (pairs (rest l)))])))
+
+
+;;=======================================
+;; 473
+
+(define cyclic-graph
+  '((A B E)
+    (B E F)
+    (C B D)
+    (D)
+    (E C F)
+    (F G)
+    (G)))
+
+
+;; Node Node Graph -> [Maybe Path]
+(define (find-path.v2 origination destination G)
+  (find-path-helper.v2 origination destination origination G))
+
+;; Node Node Node Graph -> [Maybe Path]
+;; finds a path from origination to destination in G
+;; if there is no path, the function produces #false
+(define (find-path-helper.v2 origination destination S G)
+  (cond
+   [(symbol=? origination destination) (list destination)]
+   [else (local ((define next (neighbors origination G))
+                 (define candidate
+                   (find-path-helper.v2/list  next  destination S G)))
+           (cond
+            [(boolean? candidate) #false]
+            [else (cons origination candidate)]))]))
+
+;; [List-of Node] Node Node Graph -> [Maybe Path]
+;; finds a path from some node on lo-Os to D
+;; if there is no path, the function produces #false
+(define (find-path-helper.v2/list lo-Os D S G)
+  (cond
+   [(empty? lo-Os) #false]
+   [(member? S lo-Os) #false]
+   [else (local ((define candidate
+                   (find-path-helper.v2 (first lo-Os) D S G)))
+           (cond
+            [(boolean? candidate)
+             (find-path-helper.v2/list (rest lo-Os) D S G)]
+            [else candidate]))]))
