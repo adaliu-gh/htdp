@@ -130,4 +130,4 @@
   - 453, 454: [[./25-29 Generative Recursion/453-454.rkt][link]]
 - 29. Algorithms that Backtrack
   - 471, 472, 473: [[./25-29 Generative Recursion/471-473.rkt][link]]
-  - 479, 480, 481: [[./25-29 Generative Recursion/479-481.rkt][link]]
+  - 479, 480, 481, 482: [[./25-29 Generative Recursion/479-482.rkt][link]]
