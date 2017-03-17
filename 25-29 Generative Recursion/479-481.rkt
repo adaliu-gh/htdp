@@ -78,3 +78,38 @@
                                       (real-coordinate (posn-x (first l)))
                                       (real-coordinate (posn-y (first l)))
                                       c))])))
+
+;;=================================
+;; 481
+
+;; [X] [List-of X] [List-of X] -> Boolean
+;; check if two sets are the same
+(check-expect (set=? '(1 2 3) '( 2 3 1) ) #true)
+(check-expect (set=? '(1 2 3) '( 2  1) ) #false)
+(check-expect (set=? '(1 2 3) '( 2 2 1) ) #false)
+
+(define (set=? s1 s2)
+  (and
+   (= (length s1) (length s2))
+   (andmap (lambda (i) (member? i s2)) s1)))
+
+;; Number -> [[List-of QP] -> Boolean]
+;; produce a test for n
+(check-expect ( (n-queen-solution? 4)(list (make-posn 0 1)
+                                           (make-posn 1 3)
+                                           (make-posn 2 0)
+                                           (make-posn 3 2)) ) #true)
+(define (n-queen-solution? n)
+  (local ((define (not-threatening? solution)
+            (cond
+             [(empty? solution) #true]
+             [(empty? (rest solution)) #true]
+             [else (local ((define first-q (first solution)))
+                     (and (andmap
+                           (lambda (x)
+                             (not (threatening? x first-q)))
+                           (rest solution))
+                          (not-threatening? (rest solution))))])))
+    (lambda (solution)
+      (and (= n (length solution))
+           (not-threatening? solution))) ))
