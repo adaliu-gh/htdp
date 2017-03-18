@@ -164,9 +164,7 @@
    [(zero? n) '()]
    [else (local ((define candidates (find-open-spots a-board))
                  (define potential-result (place-queens/list a-board candidates n)))
-           (cond
-            [(boolean? potential-result) #false]
-            [else potential-result]))]))
+           potential-result)]))
 
 
 ;; Board [List-of QP] Number -> [Maybe [List-of QP]]

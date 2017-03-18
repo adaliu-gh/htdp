@@ -119,15 +119,18 @@
   - 403, 404, 405, 406, 407, 408, 409: [[./19-24 Intertwined Data/403-409.rkt][link]]
   - 410, 411: [[./19-24 Intertwined Data/410-411.rkt][link]]
   - 412: [[./19-24 Intertwined Data/412.rkt][link]]
-* 25-29 Generative Recursion
+* 25-30 Generative Recursion
 - 25. Non-standard Recursion
-  - 422, 423: [[./25-29 Generative Recursion/422-423.rkt][link]]
-  - 426, 430: [[./25-29 Generative Recursion/426-430.rkt][link]]
+  - 422, 423: [[./25-30 Generative Recursion/422-423.rkt][link]]
+  - 426, 430: [[./25-30 Generative Recursion/426-430.rkt][link]]
 - 26. Designing Algorithms
-  - 432, 433, 434, 436, 437, 442 : [[./25-29 Generative Recursion/432-442.rkt][link]]
+  - 432, 433, 434, 436, 437, 442 : [[./25-30 Generative Recursion/432-442.rkt][link]]
 - 27. Variations on the Theme
-  - 445, 446-449, 450, 451: [[./25-29 Generative Recursion/445-451.rkt][link]]
-  - 453, 454: [[./25-29 Generative Recursion/453-454.rkt][link]]
+  - 445, 446-449, 450, 451: [[./25-30 Generative Recursion/445-451.rkt][link]]
+  - 453, 454: [[./25-30 Generative Recursion/453-454.rkt][link]]
 - 29. Algorithms that Backtrack
-  - 471, 472, 473: [[./25-29 Generative Recursion/471-473.rkt][link]]
-  - 479, 480, 481, 482: [[./25-29 Generative Recursion/479-482.rkt][link]]
+  - 471, 472, 473: [[./25-30 Generative Recursion/471-473.rkt][link]]
+  - 479, 480, 481, 482: [[./25-30 Generative Recursion/479-482.rkt][link]]
+* 31-34 Accumulators
+- 31. The Loss of Knowledge
+  - 490, 493: [[./31-34 Accumulators/490-493.rkt][link]]
