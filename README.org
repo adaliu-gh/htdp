@@ -134,3 +134,5 @@
 * 31-34 Accumulators
 - 31. The Loss of Knowledge
   - 490, 493: [[./31-34 Accumulators/490-493.rkt][link]]
+- 32. Designing Accumulator-style Functions
+  - 499: [[./31-34 Accumulators/499.rkt][link]]
