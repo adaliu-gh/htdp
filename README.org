@@ -137,3 +137,4 @@
 - 32. Designing Accumulator-style Functions
   - 499: [[./31-34 Accumulators/499.rkt][link]]
   - 500, 501, 502, 503: [[./31-34 Accumulators/500-503.rkt][link]]
+  - 504, 505, 506, 507, 508: [[./31-34 Accumulators/504-508.rkt][link]]
