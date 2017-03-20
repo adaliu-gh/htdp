@@ -138,3 +138,4 @@
   - 499: [[./31-34 Accumulators/499.rkt][link]]
   - 500, 501, 502, 503: [[./31-34 Accumulators/500-503.rkt][link]]
   - 504, 505, 506, 507, 508: [[./31-34 Accumulators/504-508.rkt][link]]
+  - 509, 510: [[./31-34 Accumulators/509-510.rkt][link]]
