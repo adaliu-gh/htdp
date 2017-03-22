@@ -1,145 +1,42 @@
 #+TITLE: How to Design Programs, 2ed
 #+AUTHOR: Ada
+
 * 1-7 Fixed-Size Data
-- 1. Arithmetic
-- 2. Functions and Programs
-  - [[./1-7 Fixed-Size Data/2-functions and programs.rkt]]
-- 3. How to Design Programs
-  - [[./1-7 Fixed-Size Data/3-how to design programs.rkt]]
-  - 39-41: [[./1-7 Fixed-Size Data/3-39-41.rkt][link]]
-  - 43: [[./1-7 Fixed-Size Data/3-43.rkt][link]]
-  - 44: [[./1-7 Fixed-Size Data/3-44.rkt][link]]
-  - 47: [[./1-7 Fixed-Size Data/3-47.rkt][link]]
-- 4. Intervals, Enumerations, Itemizations
-  - 51: [[./1-7 Fixed-Size Data/4-51.rkt][link]]
-  - 53-57: [[./1-7 Fixed-Size Data/4-53-57.rkt][link]]
-  - 59: [[./1-7 Fixed-Size Data/4-59.rkt][link]]
-  - 62: [[./1-7 Fixed-Size Data/4-59.rkt][link]]
-- 5. Adding Structure
-  - 74: [[./1-7 Fixed-Size Data/5-74.rkt][link]]
-  - 81: [[./1-7 Fixed-Size Data/5-81.rkt][link]]
-  - 82: [[./1-7 Fixed-Size Data/5-82.rkt][link]]
-  - chameleon: [[./1-7 Fixed-Size Data/5-chameleon.rkt][link]]
-  - graphical editor: [[./1-7 Fixed-Size Data/5-graphical editor.rkt][link]]
-  - graphical editor 2: [[./1-7 Fixed-Size Data/5-graphical editor 2.rkt][link]]
-- 6. Itemizations and Structures
-  - 107: [[./1-7 Fixed-Size Data/6-107.rkt][link]]
-  - 107-2: [[./1-7 Fixed-Size Data/6-107-2.rkt][link]]
-  - 108: [[./1-7 Fixed-Size Data/6-108.rkt][link]]
-  - 109: [[./1-7 Fixed-Size Data/6-109.rkt][link]]
-  - space invader game: [[./1-7 Fixed-Size Data/6-space invader game.rkt][link]]
-  - space invader game 2: [[./1-7 Fixed-Size Data/6-space invader game 2.rkt][link]]
-- 7. Summary
+- 1. Arithmetic ::
+- 2. Functions and Programs :: @ [[./1-7 Fixed-Size Data/2-functions and programs.rkt]] 
+- 3. How to Design Programs :: @ [[./1-7 Fixed-Size Data/3-how to design programs.rkt]] @ [[./1-7 Fixed-Size Data/3-39-41.rkt][39-41]] @ [[./1-7 Fixed-Size Data/3-43.rkt][43]] @ [[./1-7 Fixed-Size Data/3-44.rkt][44]] @ [[./1-7 Fixed-Size Data/3-47.rkt][47]] 
+- 4. Intervals, Enumerations, Itemizations :: @ [[./1-7 Fixed-Size Data/4-51.rkt][51]] @ [[./1-7 Fixed-Size Data/4-53-57.rkt][53-57]] @ [[./1-7 Fixed-Size Data/4-59.rkt][59]] @ [[./1-7 Fixed-Size Data/4-59.rkt][62]] 
+- 5. Adding Structure :: @ [[./1-7 Fixed-Size Data/5-74.rkt][74]] @ [[./1-7 Fixed-Size Data/5-81.rkt][81]] @ [[./1-7 Fixed-Size Data/5-82.rkt][82]] @ [[./1-7 Fixed-Size Data/5-chameleon.rkt][chameleon]] @ [[./1-7 Fixed-Size Data/5-graphical editor.rkt][graphical editor]] @ [[./1-7 Fixed-Size Data/5-graphical editor 2.rkt][graphical editor 2]] 
+- 6. Itemizations and Structures :: @ [[./1-7 Fixed-Size Data/6-107.rkt][107]] @ [[./1-7 Fixed-Size Data/6-107-2.rkt][107-2]] @ [[./1-7 Fixed-Size Data/6-108.rkt][108]] @ [[./1-7 Fixed-Size Data/6-109.rkt][109]] @ [[./1-7 Fixed-Size Data/6-space invader game.rkt][space invader game]] @ [[./1-7 Fixed-Size Data/6-space invader game 2.rkt][space invader game 2]] 
+- 7. Summary :: 
 * 8-13 Arbitrarily Large Data
-- 8. Lists
-- 9. Designing with Self-referential Data Definition
-  - 137-138: [[./8-13 Arbitrarily Large Data/9-137-138.rkt][link]]
-  - 140: [[./8-13 Arbitrarily Large Data/9-140.rkt][link]]
-  - 141: [[./8-13 Arbitrarily Large Data/9-141.rkt][link]]
-  - 142: [[./8-13 Arbitrarily Large Data/9-142.rkt][link]]
-  - 145, 146: [[./8-13 Arbitrarily Large Data/9-145-146.rkt][link]]
-  - 147: [[./8-13 Arbitrarily Large Data/9-147.rkt][link]]
-  - 150, 151: [[./8-13 Arbitrarily Large Data/9-150-151.rkt][link]]
-  - 152, 153: [[./8-13 Arbitrarily Large Data/9-152-153.rkt][link]]
-  - 154: [[./8-13 Arbitrarily Large Data/9-154.rkt][link]]
-  - 158: [[./8-13 Arbitrarily Large Data/9-158.rkt][link]]
-  - 159: [[./8-13 Arbitrarily Large Data/9-159.rkt][link]]
-  - 160: [[./8-13 Arbitrarily Large Data/9-160.rkt][link]]
-- 10. More on Lists
-  - 163, 164, 165: [[./8-13 Arbitrarily Large Data/10-163-165.rkt][link]]
-  - 166: [[./8-13 Arbitrarily Large Data/10-166.rkt][link]]
-  - 167, 168, 169: [[./8-13 Arbitrarily Large Data/10-167-168-169.rkt][link]]
-  - 170: [[./8-13 Arbitrarily Large Data/10-170.rkt][link]]
-  - 172: [[./8-13 Arbitrarily Large Data/10-172.rkt][link]]
-  - 173: [[./8-13 Arbitrarily Large Data/10-173.rkt][link]]
-  - 174: [[./8-13 Arbitrarily Large Data/10-174.rkt][link]]
-  - 175: [[./8-13 Arbitrarily Large Data/10-175.rkt][link]]
-  - 176: [[./8-13 Arbitrarily Large Data/10-176.rkt][link]]
-  - 179: [[./8-13 Arbitrarily Large Data/10-179.rkt][link]]
-- 11. Design by Composition
-  - 181, 182, 183, 184: [[./8-13 Arbitrarily Large Data/11-181-184.rkt][link]]
-  - 186: [[./8-13 Arbitrarily Large Data/11-186.rkt][link]]
-  - 187: [[./8-13 Arbitrarily Large Data/11-187.rkt][link]]
-  - 188: [[./8-13 Arbitrarily Large Data/11-188.rkt][link]]
-  - 189: [[./8-13 Arbitrarily Large Data/11-189.rkt][link]]
-  - 190: [[./8-13 Arbitrarily Large Data/11-190.rkt][link]]
-  - 193: [[./8-13 Arbitrarily Large Data/11-193.rkt][link]]
-  - 194: [[./8-13 Arbitrarily Large Data/11-194.rkt][link]]
-- 12. Projects: Lists
-  - 195, 196, 197, 198: [[./8-13 Arbitrarily Large Data/12-195-198.rkt][link]]
-  - 199, 200, 201, 202, 203, 204: [[./8-13 Arbitrarily Large Data/12-199-204.rkt][link]]
-  - 205, 206, 207, 208: [[./8-13 Arbitrarily Large Data/12-205-208.rkt][link]]
-  - 209, 210, 211: [[./8-13 Arbitrarily Large Data/12-209-211.rkt][link]]
-  - 212, 213, 214: [[./8-13 Arbitrarily Large Data/12-212-214.rkt][link]]
-  - 215, 216, 217, 218, 219: [[./8-13 Arbitrarily Large Data/12-215-219.rkt][link]]
-  - 220, 221, 222, 223: [[./8-13 Arbitrarily Large Data/12-220-223.rkt][link]]
-  - 226, 228: [[./8-13 Arbitrarily Large Data/12-226.228.rkt][link]]
+- 8. Lists ::
+- 9. Designing with Self-referential Data Definition :: @ [[./8-13 Arbitrarily Large Data/9-137-138.rkt][137-138]] @ [[./8-13 Arbitrarily Large Data/9-140.rkt][140]] @ [[./8-13 Arbitrarily Large Data/9-141.rkt][141]] @ [[./8-13 Arbitrarily Large Data/9-142.rkt][142]] @ [[./8-13 Arbitrarily Large Data/9-145-146.rkt][145, 146]] @ [[./8-13 Arbitrarily Large Data/9-147.rkt][147]] @ [[./8-13 Arbitrarily Large Data/9-150-151.rkt][150, 151]] @ [[./8-13 Arbitrarily Large Data/9-152-153.rkt][152, 153]] @ [[./8-13 Arbitrarily Large Data/9-154.rkt][154]] @ [[./8-13 Arbitrarily Large Data/9-158.rkt][158]] @ [[./8-13 Arbitrarily Large Data/9-159.rkt][159]] @ [[./8-13 Arbitrarily Large Data/9-160.rkt][160]] 
+- 10. More on Lists :: @ [[./8-13 Arbitrarily Large Data/10-163-165.rkt][163, 164, 165]] @ [[./8-13 Arbitrarily Large Data/10-166.rkt][166]] @ [[./8-13 Arbitrarily Large Data/10-167-168-169.rkt][167, 168, 169]] @ [[./8-13 Arbitrarily Large Data/10-170.rkt][170]] @ [[./8-13 Arbitrarily Large Data/10-172.rkt][172]] @ [[./8-13 Arbitrarily Large Data/10-173.rkt][173]] @ [[./8-13 Arbitrarily Large Data/10-174.rkt][174]] @ [[./8-13 Arbitrarily Large Data/10-175.rkt][175]] @ [[./8-13 Arbitrarily Large Data/10-176.rkt][176]] @ [[./8-13 Arbitrarily Large Data/10-179.rkt][179]] 
+- 11. Design by Composition :: @ [[./8-13 Arbitrarily Large Data/11-181-184.rkt][181, 182, 183, 184]] @ [[./8-13 Arbitrarily Large Data/11-186.rkt][186]] @ [[./8-13 Arbitrarily Large Data/11-187.rkt][187]] @ [[./8-13 Arbitrarily Large Data/11-188.rkt][188]] @ [[./8-13 Arbitrarily Large Data/11-189.rkt][189]] @ [[./8-13 Arbitrarily Large Data/11-190.rkt][190]] @ [[./8-13 Arbitrarily Large Data/11-193.rkt][193]] @ [[./8-13 Arbitrarily Large Data/11-194.rkt][194]] 
+- 12. Projects: Lists :: @ [[./8-13 Arbitrarily Large Data/12-195-198.rkt][195, 196, 197, 198]] @ [[./8-13 Arbitrarily Large Data/12-199-204.rkt][199, 200, 201, 202, 203, 204]] @ [[./8-13 Arbitrarily Large Data/12-205-208.rkt][205, 206, 207, 208]] @ [[./8-13 Arbitrarily Large Data/12-209-211.rkt][209, 210, 211]] @ [[./8-13 Arbitrarily Large Data/12-212-214.rkt][212, 213, 214]] @ [[./8-13 Arbitrarily Large Data/12-215-219.rkt][215, 216, 217, 218, 219]] @ [[./8-13 Arbitrarily Large Data/12-220-223.rkt][220, 221, 222, 223]] @ [[./8-13 Arbitrarily Large Data/12-226.228.rkt][226, 228]] 
+
 * 14-18 Abstraction
-- 14. Similarities Everywhere
-  - 235, 236: [[./14-18 Abstraction/14-235-236.rkt][link]]
-  - 238: [[./14-18 Abstraction/14-238.rkt][link]]
-  - 245: [[./14-18 Abstraction/14-245.rkt][link]]
-- 15. Designing Abstractions
-  - 250, 251, 252: [[./14-18 Abstraction/15-250-252.rkt][link]]
-  - 254, 255: deleted accidentally 
-- 16. Using Abstractions
-  - 257, 258: [[./14-18 Abstraction/16-257-258.rkt][link]]
-  - 267, 268, 269: [[./14-18 Abstraction/16-267-269.rkt][link]]
-  - 270, 271: [[./14-18 Abstraction/16-270-271.rkt][link]]
-  - 272, 273, 274: [[./14-18 Abstraction/16-272-274.rkt][link]]
-- 17. Nameless Functions
-  - 285, 286, 287, 288, 289, 290, 291: [[./14-18 Abstraction/17-285-291.rkt][link]]
-  - 292, 293, 294, 295: [[./14-18 Abstraction/17-292-295.rkt][link]]
-  - 299 :  [[./14-18 Abstraction/17-299.rkt][link]]
-- Intermezzo
-  - 305, 306, 307:  [[./14-18 Abstraction/for-loop.rkt][link]]
-  - 308, 309: [[./14-18 Abstraction/pattern.rkt][link]]
+- 14. Similarities Everywhere :: @ [[./14-18 Abstraction/14-235-236.rkt][235, 236]] @ [[./14-18 Abstraction/14-238.rkt][238]] @ [[./14-18 Abstraction/14-245.rkt][245]] 
+- 15. Designing Abstractions :: @ [[./14-18 Abstraction/15-250-252.rkt][250, 251, 252]] 
+- 16. Using Abstractions :: @ [[./14-18 Abstraction/16-257-258.rkt][257, 258]] @ [[./14-18 Abstraction/16-267-269.rkt][267, 268, 269]] @ [[./14-18 Abstraction/16-270-271.rkt][270, 271]] @ [[./14-18 Abstraction/16-272-274.rkt][272, 273, 274]] 
+- 17. Nameless Functions :: @ [[./14-18 Abstraction/17-285-291.rkt][285, 286, 287, 288, 289, 290, 291]] @ [[./14-18 Abstraction/17-292-295.rkt][292, 293, 294, 295]] @ [[./14-18 Abstraction/17-299.rkt][299]] 
+- Intermezzo :: @ [[./14-18 Abstraction/for-loop.rkt][305, 306, 307]] @ [[./14-18 Abstraction/pattern.rkt][308, 309]] 
+
 * 19-24 Intertwined Data
-- 19. The Poetry of S-expressions
-  - 310, 311, 312, 313, 314, 315: [[./19-24 Intertwined Data/310-315.rkt][link]]
-  - 316, 317, 318, 319, 320, 321: [[./19-24 Intertwined Data/316-321.rkt][link]]
-  - 322, 323, 324, 325, 326, 327: [[./19-24 Intertwined Data/322-327.rkt][link]]
-- 20. Incremental Refinement
-  - 330, 331, 332, 333, 334, 335, 336: [[./19-24 Intertwined Data/330-336.rkt][link]]
-  - 338, 339, 340, 341, 342, 343, 344: [[./19-24 Intertwined Data/338-344.rkt][link]]
-- 21. Refining Interpreters
-  - 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355: [[./19-24 Intertwined Data/345-355.rkt][link]]
-  - 356, 357, 358, 359: [[./19-24 Intertwined Data/356-359.rkt][link]]
-  - 360, 361, 362: [[./19-24 Intertwined Data/360-362.rkt][link]]
-- 22. The Commerce of XML
-  - 363, 364, 365, 366, 369: [[./19-24 Intertwined Data/363-369.rkt][link]]
-  - 370, 371, 372, 376, 377: [[./19-24 Intertwined Data/370-377.rkt][link]]
-  - 378, 379, 380, 381, 382, 383: [[./19-24 Intertwined Data/378-383.rkt][link]]
-  - 384, 386: [[./19-24 Intertwined Data/384-386.rkt][link]]
-- 23. Simultaneous Processing
-  - 387, 388, 389: [[./19-24 Intertwined Data/387-389.rkt][link]]
-  - 393, 394, 395: [[./19-24 Intertwined Data/393-395.rkt][link]]
-  - 396: [[./19-24 Intertwined Data/396.rkt][link]]
-  - 397, 398, 399, 400, 401: [[./19-24 Intertwined Data/397-401.rkt][link]]
-  - 403, 404, 405, 406, 407, 408, 409: [[./19-24 Intertwined Data/403-409.rkt][link]]
-  - 410, 411: [[./19-24 Intertwined Data/410-411.rkt][link]]
-  - 412: [[./19-24 Intertwined Data/412.rkt][link]]
+- 19. The Poetry of S-expressions :: @ [[./19-24 Intertwined Data/310-315.rkt][310, 311, 312, 313, 314, 315]] @ [[./19-24 Intertwined Data/316-321.rkt][316, 317, 318, 319, 320, 321]] @ [[./19-24 Intertwined Data/322-327.rkt][322, 323, 324, 325, 326, 327]] 
+- 20. Incremental Refinement :: @ [[./19-24 Intertwined Data/330-336.rkt][330, 331, 332, 333, 334, 335, 336]] @ [[./19-24 Intertwined Data/338-344.rkt][338, 339, 340, 341, 342, 343, 344]] 
+- 21. Refining Interpreters :: @ [[./19-24 Intertwined Data/345-355.rkt][345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355]] @ [[./19-24 Intertwined Data/356-359.rkt][356, 357, 358, 359]] @ [[./19-24 Intertwined Data/360-362.rkt][360, 361, 362]] 
+- 22. The Commerce of XML :: @ [[./19-24 Intertwined Data/363-369.rkt][363, 364, 365, 366, 369]] @ [[./19-24 Intertwined Data/370-377.rkt][370, 371, 372, 376, 377]] @ [[./19-24 Intertwined Data/378-383.rkt][378, 379, 380, 381, 382, 383]] @ [[./19-24 Intertwined Data/384-386.rkt][384, 386]] 
+- 23. Simultaneous Processing :: @ [[./19-24 Intertwined Data/387-389.rkt][387, 388, 389]] @ [[./19-24 Intertwined Data/393-395.rkt][393, 394, 395]] @ [[./19-24 Intertwined Data/396.rkt][396]] @ [[./19-24 Intertwined Data/397-401.rkt][397, 398, 399, 400, 401]] @ [[./19-24 Intertwined Data/403-409.rkt][403, 404, 405, 406, 407, 408, 409]] @ [[./19-24 Intertwined Data/410-411.rkt][410, 411]] @ [[./19-24 Intertwined Data/412.rkt][412]] 
+
 * 25-30 Generative Recursion
-- 25. Non-standard Recursion
-  - 422, 423: [[./25-30 Generative Recursion/422-423.rkt][link]]
-  - 426, 430: [[./25-30 Generative Recursion/426-430.rkt][link]]
-- 26. Designing Algorithms
-  - 432, 433, 434, 436, 437, 442 : [[./25-30 Generative Recursion/432-442.rkt][link]]
-- 27. Variations on the Theme
-  - 445, 446-449, 450, 451: [[./25-30 Generative Recursion/445-451.rkt][link]]
-  - 453, 454: [[./25-30 Generative Recursion/453-454.rkt][link]]
-- 29. Algorithms that Backtrack
-  - 471, 472, 473: [[./25-30 Generative Recursion/471-473.rkt][link]]
-  - 479, 480, 481, 482: [[./25-30 Generative Recursion/479-482.rkt][link]]
+- 25. Non-standard Recursion :: @ [[./25-30 Generative Recursion/422-423.rkt][422, 423]] @ [[./25-30 Generative Recursion/426-430.rkt][426, 430]] 
+- 26. Designing Algorithms :: @ [[./25-30 Generative Recursion/432-442.rkt][432, 433, 434, 436, 437, 442 ]] 
+- 27. Variations on the Theme :: @ [[./25-30 Generative Recursion/445-451.rkt][445, 446-449, 450, 451]] @ [[./25-30 Generative Recursion/453-454.rkt][453, 454]] 
+- 29. Algorithms that Backtrack :: @ [[./25-30 Generative Recursion/471-473.rkt][471, 472, 473]] @ [[./25-30 Generative Recursion/479-482.rkt][479, 480, 481, 482]] 
+
 * 31-34 Accumulators
-- 31. The Loss of Knowledge
-  - 490, 493: [[./31-34 Accumulators/490-493.rkt][link]]
-- 32. Designing Accumulator-style Functions
-  - 499: [[./31-34 Accumulators/499.rkt][link]]
-  - 500, 501, 502, 503: [[./31-34 Accumulators/500-503.rkt][link]]
-  - 504, 505, 506, 507, 508: [[./31-34 Accumulators/504-508.rkt][link]]
-  - 509, 510: [[./31-34 Accumulators/509-510.rkt][link]]
-  - 511: [[./31-34 Accumulators/511.rkt][link]]
-- 33. More Uses of Accumulations
-  - 513, 515, 516, 518: [[./31-34 Accumulators/513-518.rkt][link]]
-  - 514, 517: [[./31-34 Accumulators/514-517.rkt][link]]
+- 31. The Loss of Knowledge :: @ [[./31-34 Accumulators/490-493.rkt][490, 493]] 
+- 32. Designing Accumulator-style Functions :: @ [[./31-34 Accumulators/499.rkt][499]] @ [[./31-34 Accumulators/500-503.rkt][500, 501, 502, 503]] @ [[./31-34 Accumulators/504-508.rkt][504, 505, 506, 507, 508]] @ [[./31-34 Accumulators/509-510.rkt][509, 510]] @ [[./31-34 Accumulators/511.rkt][511]] 
+- 33. More Uses of Accumulations :: @ [[./31-34 Accumulators/513-518.rkt][513, 515, 516, 518]] @ [[./31-34 Accumulators/514-517.rkt][514, 517]] 
