@@ -141,4 +141,5 @@
   - 509, 510: [[./31-34 Accumulators/509-510.rkt][link]]
   - 511: [[./31-34 Accumulators/511.rkt][link]]
 - 33. More Uses of Accumulations
-  - 513: [[./31-34 Accumulators/513.rkt][link]]
+  - 513, 515, 516, 518: [[./31-34 Accumulators/513-518.rkt][link]]
+  - 514, 517: [[./31-34 Accumulators/514-517.rkt][link]]
