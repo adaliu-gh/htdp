@@ -39,4 +39,4 @@
 * 31-34 Accumulators
 - 31. The Loss of Knowledge ::  [[./31-34 Accumulators/490-493.rkt][490, 493]] 
 - 32. Designing Accumulator-style Functions ::  [[./31-34 Accumulators/499.rkt][499]]  [[./31-34 Accumulators/500-503.rkt][500, 501, 502, 503]]  [[./31-34 Accumulators/504-508.rkt][504, 505, 506, 507, 508]]  [[./31-34 Accumulators/509-510.rkt][509, 510]]  [[./31-34 Accumulators/511.rkt][511]] 
-- 33. More Uses of Accumulations ::  [[./31-34 Accumulators/513-518.rkt][513, 515, 516, 518]]  [[./31-34 Accumulators/514-517.rkt][514, 517]]  [[./31-34 Accumulators/522.rkt][522]]  [[./31-34 Accumulators/523-525.rkt][523-525]]  [[./31-34 Accumulators/526-527.rkt][526-527]]  [[./31-34 Accumulators/528.rkt][528]]
+- 33. More Uses of Accumulations ::  [[./31-34 Accumulators/513-518.rkt][513, 515, 516, 518]]  [[./31-34 Accumulators/514-517.rkt][514, 517]]  [[./31-34 Accumulators/522.rkt][522]]  [[./31-34 Accumulators/523-525.rkt][523-525]]  [[./31-34 Accumulators/526-527.rkt][526-527]]  [[./31-34 Accumulators/528.rkt][528]]  [[./31-34 Accumulators/529.rkt][529]]
