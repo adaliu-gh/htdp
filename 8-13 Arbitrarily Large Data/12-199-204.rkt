@@ -106,14 +106,20 @@
 ; Date Date -> Boolean
 ; determines whether the second date is after the first date
 (check-expect (after-date? d1 d2) #true)
+(check-expect (after-date? d2 d1) #false)
 (define (after-date? d1 d2)
   (cond
     [(> (date-year d2) (date-year d1)) #true]
-    [(> (date-month d2) (date-month d1)) #true]
-    [(> (date-day d2) (date-day d1)) #true]
-    [(> (date-hour d2) (date-hour d1)) #true]
-    [(> (date-minute d2) (date-minute d1)) #true]
-    [(> (date-second d2) (date-second d1)) #true]
+    [(and (= (date-year d2) (date-year d1))
+          (> (date-month d2) (date-month d1))) #true]
+    [(and (= (date-month d2) (date-month d1))
+      (> (date-day d2) (date-day d1))) #true]
+    [(and (= (date-day d2) (date-day d1))
+      (> (date-hour d2) (date-hour d1))) #true]
+    [(and (= (date-hour d2) (date-hour d1))
+      (> (date-minute d2) (date-minute d1))) #true]
+    [(and (= (date-minute d2) (date-minute d1))
+      (> (date-second d2) (date-second d1))) #true]
     [else #false]))
 
 ; ---------------------------------
