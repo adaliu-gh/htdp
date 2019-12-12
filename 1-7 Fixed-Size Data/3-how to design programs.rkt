@@ -17,7 +17,7 @@
 ; given: "ada", expected: "a"
 ; given: "world", expected: "d"
 (define (string-last str)
-  (substring str (- (string-length str) 1) (string-length str)))
+  (substring str (sub1 (string-length str))))
 
 ; exercise 36
 ; Image -> Number
@@ -33,7 +33,7 @@
 ; given: "ada", expected: "da"
 ; given: "world", expected: "orld"
 (define (string-rest str)
-  (substring str 1 (string-length str)))
+  (substring str 1))
 
 ; exercise 38
 ; String -> String
@@ -41,4 +41,4 @@
 ; given: "ada", expected: "ad"
 ; given: "world", expected: "worl"
 (define (string-remove-last str)
-  (substring str 0 (- (string-length str) 1)))
+  (substring str 0 (sub1 (string-length str))))
