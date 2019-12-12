@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname 2function) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname |2-functions and programs|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/image)
 
 ; exercise 11
@@ -20,13 +20,11 @@
 
 ;exercise 14
 (define (string-last str)
-  (substring str (- (string-length str) 1) (string-length str)))
+  (substring str (- (string-length str) 1)))
 
 ;exercise 15
 (define (==> sunny friday)
-  (if (or (not sunny) friday)
-      #true
-      #false))
+  (or (not sunny) friday))
 
 ;exercise 16
 (define (image-area image)
@@ -50,13 +48,13 @@
   (string-append
    (substring str 0 i)
    "_"
-   (substring str i (string-length str))))
+   (substring str i)))
 
 ;exercise 20
 (define (string-delete str i)
   (string-append
    (substring str 0 i)
-   (substring str (+ i 1) (string-length str))))
+   (substring str (+ i 1))))
 
 
 
